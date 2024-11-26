@@ -1,0 +1,17 @@
+
+  
+.linkBox ul{
+    list-style: none;
+    padding: 0;
+  
+    & a{
+      cursor: pointer;
+      color: #fff;
+      font-weight: 400;
+      letter-spacing: 1.1px;
+    }
+  
+    & a:hover{
+      text-decoration: underline;
+    }
+  }

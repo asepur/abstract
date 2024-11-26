@@ -1,0 +1,99 @@
+.section__hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  
+    padding: 20% 5%;
+    background-color: #dadbf1;
+}
+  
+  .section__hero--search{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+
+    border: 1px solid var(--color-black);
+    outline: none;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .section__hero--search:hover{
+    border: 1px solid var(--color-blue);
+  }
+  
+  .section__hero--input{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    color: #000;
+    border-radius: 4px;
+    background: transparent;
+    border: none;
+    font-size: 19px;
+
+    flex: 1;
+    outline: none;
+    padding-left: 20px;
+    text-transform: capitalize;
+  }
+  
+  .section__hero--input::placeholder{
+    opacity: .6;
+    font-size: 22px;
+    
+  }
+  
+  .section__hero--input:focus{
+    outline: none;
+  }
+  .section__hero--button {
+    padding: 10px 15px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: var(--color-black);
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: transform 300ms ease;
+  }
+
+  .section__hero--button:hover{
+    transform: scale(140%);
+  }
+
+  .section__hero--button:focus, .section__hero--button:active{
+    outline: none;
+  }
+
+  @media ( width > 800px) {
+    .section__hero{
+    
+      padding: 6%;
+      background-color: #dadbf1;
+    
+    }
+    .section__hero--search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      margin: 0 auto;
+      max-width: 800px;
+      
+    }
+    .section__hero--input{
+      display: flex;
+      margin: 0 auto;
+      height: 80px;
+      
+    }
+
+  }
